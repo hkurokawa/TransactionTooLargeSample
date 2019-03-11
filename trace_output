@@ -1,0 +1,1102 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 1088/920099   #P:4
+#
+#                              _-----=> irqs-off
+#                             / _----=> need-resched
+#                            | / _---=> hardirq/softirq
+#                            || / _--=> preempt-depth
+#                            ||| /     delay
+#           TASK-PID   CPU#  ||||    TIMESTAMP  FUNCTION
+#              | |       |   ||||       |         |
+   Binder:1440_1-1452  [001] ...1  6441.948665: binder_ioctl: cmd=0xc0306201 arg=0xee5815c8
+   Binder:1440_1-1452  [001] ...1  6441.948666: binder_command: cmd=0x40406301 BC_REPLY
+   Binder:1440_1-1452  [001] ...1  6441.948667: binder_transaction: transaction=1538945 dest_node=0 dest_proc=2842 dest_thread=2842 reply=1 flags=0x8 code=0x0
+   Binder:1440_1-1452  [001] ...1  6441.948668: binder_transaction_alloc_buf: transaction=1538945 data_size=4 offsets_size=0
+   Binder:1440_1-1452  [001] ...1  6441.948672: binder_set_priority: proc=1440 thread=1452 old=110 => new=120 desired=120
+   Binder:1440_1-1452  [001] ...1  6441.948674: binder_write_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948674: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+   Binder:1440_1-1452  [001] ...1  6441.948675: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   Binder:1440_1-1452  [001] ...1  6441.948675: binder_read_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948675: binder_ioctl_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948677: binder_ioctl: cmd=0xc0306201 arg=0xee581768
+   Binder:1440_1-1452  [001] ...1  6441.948677: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_1-1452  [001] ...1  6441.948678: binder_transaction_buffer_release: transaction=1538942 data_size=80 offsets_size=0
+   Binder:1440_1-1452  [001] ...1  6441.948679: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_1-1452  [001] ...1  6441.948679: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_1-1452  [001] ...1  6441.948679: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_1-1452  [001] ...1  6441.948679: binder_write_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948679: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   Binder:1440_1-1452  [001] ...1  6441.948820: binder_transaction_received: transaction=1538946
+   Binder:1440_1-1452  [001] ...1  6441.948820: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1440_1-1452  [001] ...1  6441.948821: binder_read_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948821: binder_ioctl_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948830: binder_ioctl: cmd=0xc0306201 arg=0xee5815c8
+   Binder:1440_1-1452  [001] ...1  6441.948830: binder_command: cmd=0x40406301 BC_REPLY
+   Binder:1440_1-1452  [001] ...1  6441.948831: binder_transaction: transaction=1538947 dest_node=0 dest_proc=1668 dest_thread=1706 reply=1 flags=0x0 code=0x0
+   Binder:1440_1-1452  [001] ...1  6441.948832: binder_transaction_alloc_buf: transaction=1538947 data_size=0 offsets_size=0
+   Binder:1440_1-1452  [001] ...1  6441.948913: binder_set_priority: proc=1440 thread=1452 old=116 => new=120 desired=120
+   Binder:1440_1-1452  [001] ...1  6441.948916: binder_write_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948916: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+   Binder:1440_1-1452  [001] ...1  6441.948917: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   Binder:1440_1-1452  [001] ...1  6441.948917: binder_read_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948917: binder_ioctl_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948922: binder_ioctl: cmd=0xc0306201 arg=0xee581768
+   Binder:1440_1-1452  [001] ...1  6441.948922: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_1-1452  [001] ...1  6441.948922: binder_transaction_buffer_release: transaction=1538946 data_size=76 offsets_size=0
+   Binder:1440_1-1452  [001] ...1  6441.948923: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_1-1452  [001] ...1  6441.948923: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_1-1452  [001] ...1  6441.948923: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_1-1452  [001] ...1  6441.948923: binder_write_done: ret=0
+   Binder:1440_1-1452  [001] ...1  6441.948924: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ earchbox:search-2842  [001] ...1  6441.964626: binder_ioctl: cmd=0xc0306201 arg=0xffeed438
+ earchbox:search-2842  [001] ...1  6441.964669: binder_command: cmd=0x40406300 BC_TRANSACTION
+ earchbox:search-2842  [001] ...1  6441.964672: binder_transaction: transaction=1538953 dest_node=39144 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ earchbox:search-2842  [001] ...1  6441.964673: binder_transaction_alloc_buf: transaction=1538953 data_size=80 offsets_size=0
+ earchbox:search-2842  [001] ...1  6441.964744: binder_write_done: ret=0
+ earchbox:search-2842  [001] ...1  6441.964744: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ earchbox:search-2842  [001] ...1  6441.964745: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ earchbox:search-2842  [001] ...1  6441.964746: binder_read_done: ret=0
+ earchbox:search-2842  [001] ...1  6441.964746: binder_ioctl_done: ret=0
+    android.anim-1743  [001] ...1  6441.965411: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+    android.anim-1743  [001] ...1  6441.965412: binder_transaction_received: transaction=1538954
+    android.anim-1743  [001] ...1  6441.965412: binder_return: cmd=0x80407203 BR_REPLY
+    android.anim-1743  [001] ...1  6441.965413: binder_read_done: ret=0
+    android.anim-1743  [001] ...1  6441.965413: binder_ioctl_done: ret=0
+    android.anim-1743  [001] ...1  6441.965531: binder_ioctl: cmd=0xc0306201 arg=0xce36fef8
+    android.anim-1743  [001] ...1  6441.965532: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+    android.anim-1743  [001] ...1  6441.965532: binder_transaction_buffer_release: transaction=1538954 data_size=0 offsets_size=0
+    android.anim-1743  [001] ...1  6441.965533: binder_command: cmd=0x40406300 BC_TRANSACTION
+    android.anim-1743  [001] ...1  6441.965535: binder_transaction: transaction=1538955 dest_node=321 dest_proc=1440 dest_thread=0 reply=0 flags=0x10 code=0x8
+    android.anim-1743  [001] ...1  6441.965535: binder_update_page_range: proc=1440 allocate=1 offset=0 size=4096
+    android.anim-1743  [001] ...1  6441.965535: binder_alloc_lru_start: proc=1440 page_index=0
+    android.anim-1743  [001] ...1  6441.965535: binder_alloc_lru_end: proc=1440 page_index=0
+    android.anim-1743  [001] ...1  6441.965536: binder_transaction_alloc_buf: transaction=1538955 data_size=344 offsets_size=16
+    android.anim-1743  [001] ...2  6441.965537: binder_transaction_ref_to_node: transaction=1538955 node=11076 src_ref=11077 src_desc=116 ==> dest_ptr=0x00000000ee9b96d0
+    android.anim-1743  [001] ...2  6441.965539: binder_transaction_ref_to_node: transaction=1538955 node=14312 src_ref=14313 src_desc=258 ==> dest_ptr=0x00000000ee9b9760
+    android.anim-1743  [001] ...3  6441.965539: binder_set_priority: proc=1440 thread=1774 old=120 => new=116 desired=116
+    android.anim-1743  [001] ...1  6441.965594: binder_write_done: ret=0
+    android.anim-1743  [001] ...1  6441.965594: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+##### CPU 0 buffer started ####
+ HwBinder:1430_1-1467  [000] ...1  6441.997079: binder_free_lru_start: proc=1430 page_index=0
+ HwBinder:1430_1-1467  [000] ...1  6441.997080: binder_free_lru_end: proc=1430 page_index=0
+ HwBinder:1430_1-1467  [000] ...1  6441.997080: binder_write_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6441.997081: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+##### CPU 3 buffer started ####
+   SensorService-1748  [003] ...3  6441.997183: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6441.997186: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6441.997187: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+  surfaceflinger-1440  [001] ...1  6441.997216: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+  surfaceflinger-1440  [001] ...1  6441.997217: binder_transaction_received: transaction=1538960
+  surfaceflinger-1440  [001] ...1  6441.997218: binder_return: cmd=0x80407203 BR_REPLY
+  surfaceflinger-1440  [001] ...1  6441.997218: binder_read_done: ret=0
+  surfaceflinger-1440  [001] ...1  6441.997219: binder_ioctl_done: ret=0
+ earchbox:search-2842  [003] ...1  6441.997570: binder_ioctl: cmd=0xc0306201 arg=0xffeed438
+ earchbox:search-2842  [003] ...1  6441.997571: binder_command: cmd=0x40406300 BC_TRANSACTION
+ earchbox:search-2842  [003] ...1  6441.997574: binder_transaction: transaction=1538962 dest_node=39144 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ earchbox:search-2842  [003] ...1  6441.997574: binder_update_page_range: proc=1440 allocate=1 offset=0 size=4096
+ earchbox:search-2842  [003] ...1  6441.997574: binder_alloc_lru_start: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6441.997575: binder_alloc_lru_end: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6441.997575: binder_transaction_alloc_buf: transaction=1538962 data_size=80 offsets_size=0
+ earchbox:search-2842  [003] ...1  6441.997580: binder_write_done: ret=0
+ earchbox:search-2842  [003] ...1  6441.997580: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ earchbox:search-2842  [003] ...1  6441.997581: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ earchbox:search-2842  [003] ...1  6441.997581: binder_read_done: ret=0
+ earchbox:search-2842  [003] ...1  6441.997581: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6441.997642: binder_transaction_received: transaction=1538962
+   Binder:1440_4-1774  [001] ...1  6441.997642: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1440_4-1774  [001] ...1  6441.997643: binder_read_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6441.997643: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6441.997784: binder_ioctl: cmd=0xc0306201 arg=0xeacfd768
+   Binder:1440_4-1774  [001] ...1  6441.997785: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_4-1774  [001] ...1  6441.997785: binder_transaction_buffer_release: transaction=1538962 data_size=80 offsets_size=0
+   Binder:1440_4-1774  [001] ...1  6441.997786: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_4-1774  [001] ...1  6441.997786: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6441.997786: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6441.997787: binder_write_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6441.997787: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+  surfaceflinger-1440  [001] ...1  6442.001738: binder_ioctl: cmd=0xc0306201 arg=0xffcbb768
+  surfaceflinger-1440  [001] ...1  6442.001739: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+  surfaceflinger-1440  [001] ...1  6442.001739: binder_transaction_buffer_release: transaction=1538960 data_size=96 offsets_size=8
+  surfaceflinger-1440  [001] ...1  6442.001741: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+  surfaceflinger-1440  [001] ...1  6442.001742: binder_transaction: transaction=1538963 dest_node=268 dest_proc=1430 dest_thread=0 reply=0 flags=0x10 code=0x17
+  surfaceflinger-1440  [001] ...1  6442.001742: binder_update_page_range: proc=1430 allocate=1 offset=0 size=4096
+  surfaceflinger-1440  [001] ...1  6442.001742: binder_alloc_lru_start: proc=1430 page_index=0
+  surfaceflinger-1440  [001] ...1  6442.001743: binder_alloc_lru_end: proc=1430 page_index=0
+  surfaceflinger-1440  [001] ...1  6442.001743: binder_transaction_alloc_buf: transaction=1538963 data_size=220 offsets_size=32
+  surfaceflinger-1440  [001] ...1  6442.001745: binder_transaction_fd: transaction=1538963 src_fd=40 ==> dest_fd=8
+  surfaceflinger-1440  [001] ...3  6442.001746: binder_set_priority: proc=1430 thread=1467 old=97 => new=98 desired=98
+  surfaceflinger-1440  [001] ...1  6442.001840: binder_write_done: ret=0
+  surfaceflinger-1440  [001] ...1  6442.001841: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1430_1-1467  [000] ...1  6442.001915: binder_transaction_received: transaction=1538963
+ HwBinder:1430_1-1467  [000] ...1  6442.001916: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1430_1-1467  [000] ...1  6442.001916: binder_read_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.001917: binder_ioctl_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002017: binder_ioctl: cmd=0xc0306201 arg=0xf1081f48
+ HwBinder:1430_1-1467  [000] ...1  6442.002017: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1430_1-1467  [000] ...1  6442.002019: binder_transaction: transaction=1538964 dest_node=0 dest_proc=1440 dest_thread=1440 reply=1 flags=0x0 code=0x0
+ HwBinder:1430_1-1467  [000] ...1  6442.002020: binder_transaction_alloc_buf: transaction=1538964 data_size=96 offsets_size=8
+ HwBinder:1430_1-1467  [000] ...1  6442.002499: binder_set_priority: proc=1430 thread=1467 old=98 => new=97 desired=97
+ HwBinder:1430_1-1467  [000] ...1  6442.002501: binder_write_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002502: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1430_1-1467  [000] ...1  6442.002502: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1430_1-1467  [000] ...1  6442.002503: binder_read_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002503: binder_ioctl_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002509: binder_ioctl: cmd=0xc0306201 arg=0xf1082768
+ HwBinder:1430_1-1467  [000] ...1  6442.002510: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1430_1-1467  [000] ...1  6442.002510: binder_transaction_buffer_release: transaction=1538963 data_size=220 offsets_size=32
+ HwBinder:1430_1-1467  [000] ...1  6442.002511: binder_update_page_range: proc=1430 allocate=0 offset=0 size=4096
+ HwBinder:1430_1-1467  [000] ...1  6442.002512: binder_free_lru_start: proc=1430 page_index=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002512: binder_free_lru_end: proc=1430 page_index=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002512: binder_write_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002512: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+  surfaceflinger-1440  [001] ...1  6442.002600: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+  surfaceflinger-1440  [001] ...1  6442.002601: binder_transaction_received: transaction=1538964
+  surfaceflinger-1440  [001] ...1  6442.002601: binder_return: cmd=0x80407203 BR_REPLY
+  surfaceflinger-1440  [001] ...1  6442.002602: binder_read_done: ret=0
+  surfaceflinger-1440  [001] ...1  6442.002602: binder_ioctl_done: ret=0
+  surfaceflinger-1440  [001] ...1  6442.002705: binder_ioctl: cmd=0xc0306201 arg=0xffcbb7f8
+  surfaceflinger-1440  [001] ...1  6442.002706: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+  surfaceflinger-1440  [001] ...1  6442.002707: binder_transaction_buffer_release: transaction=1538964 data_size=96 offsets_size=8
+  surfaceflinger-1440  [001] ...1  6442.002708: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+  surfaceflinger-1440  [001] ...1  6442.002709: binder_transaction: transaction=1538965 dest_node=268 dest_proc=1430 dest_thread=0 reply=0 flags=0x10 code=0x7
+  surfaceflinger-1440  [001] ...1  6442.002709: binder_update_page_range: proc=1430 allocate=1 offset=0 size=4096
+  surfaceflinger-1440  [001] ...1  6442.002710: binder_alloc_lru_start: proc=1430 page_index=0
+  surfaceflinger-1440  [001] ...1  6442.002710: binder_alloc_lru_end: proc=1430 page_index=0
+  surfaceflinger-1440  [001] ...1  6442.002710: binder_transaction_alloc_buf: transaction=1538965 data_size=64 offsets_size=0
+  surfaceflinger-1440  [001] ...3  6442.002711: binder_set_priority: proc=1430 thread=1467 old=97 => new=98 desired=98
+  surfaceflinger-1440  [001] ...1  6442.002767: binder_write_done: ret=0
+  surfaceflinger-1440  [001] ...1  6442.002768: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1430_1-1467  [000] ...1  6442.002836: binder_transaction_received: transaction=1538965
+ HwBinder:1430_1-1467  [000] ...1  6442.002837: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1430_1-1467  [000] ...1  6442.002838: binder_read_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002838: binder_ioctl_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002847: binder_ioctl: cmd=0xc0306201 arg=0xf1081f88
+ HwBinder:1430_1-1467  [000] ...1  6442.002848: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1430_1-1467  [000] ...1  6442.002848: binder_transaction: transaction=1538966 dest_node=0 dest_proc=1440 dest_thread=1440 reply=1 flags=0x0 code=0x0
+ HwBinder:1430_1-1467  [000] ...1  6442.002849: binder_transaction_alloc_buf: transaction=1538966 data_size=12 offsets_size=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002906: binder_set_priority: proc=1430 thread=1467 old=98 => new=97 desired=97
+ HwBinder:1430_1-1467  [000] ...1  6442.002909: binder_write_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002909: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1430_1-1467  [000] ...1  6442.002910: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1430_1-1467  [000] ...1  6442.002910: binder_read_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002910: binder_ioctl_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002915: binder_ioctl: cmd=0xc0306201 arg=0xf1082768
+ HwBinder:1430_1-1467  [000] ...1  6442.002915: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1430_1-1467  [000] ...1  6442.002916: binder_transaction_buffer_release: transaction=1538965 data_size=64 offsets_size=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002916: binder_update_page_range: proc=1430 allocate=0 offset=0 size=4096
+ HwBinder:1430_1-1467  [000] ...1  6442.002916: binder_free_lru_start: proc=1430 page_index=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002917: binder_free_lru_end: proc=1430 page_index=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002917: binder_write_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.002917: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+  surfaceflinger-1440  [001] ...1  6442.002965: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+  surfaceflinger-1440  [001] ...1  6442.002966: binder_transaction_received: transaction=1538966
+  surfaceflinger-1440  [001] ...1  6442.002966: binder_return: cmd=0x80407203 BR_REPLY
+  surfaceflinger-1440  [001] ...1  6442.002966: binder_read_done: ret=0
+  surfaceflinger-1440  [001] ...1  6442.002967: binder_ioctl_done: ret=0
+   POSIX timer 1-1462  [000] ...1  6442.011023: binder_ioctl: cmd=0xc0306201 arg=0xed785548
+   POSIX timer 1-1462  [000] ...1  6442.011026: binder_command: cmd=0x40406300 BC_TRANSACTION
+   POSIX timer 1-1462  [000] ...1  6442.011029: binder_transaction: transaction=1538967 dest_node=2026 dest_proc=1668 dest_thread=0 reply=0 flags=0x11 code=0x5
+   POSIX timer 1-1462  [000] ...1  6442.011031: binder_transaction_alloc_buf: transaction=1538967 data_size=68 offsets_size=0
+   POSIX timer 1-1462  [000] ...1  6442.011191: binder_write_done: ret=0
+   POSIX timer 1-1462  [000] ...1  6442.011192: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+   POSIX timer 1-1462  [000] ...1  6442.011193: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   POSIX timer 1-1462  [000] ...1  6442.011194: binder_read_done: ret=0
+   POSIX timer 1-1462  [000] ...1  6442.011194: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.011386: binder_transaction_received: transaction=1538967
+   Binder:1668_2-1685  [000] ...1  6442.011386: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1668_2-1685  [000] ...1  6442.011387: binder_read_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.011388: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.011440: binder_ioctl: cmd=0xc0306201 arg=0xd0589c08
+   Binder:1668_2-1685  [000] ...1  6442.011441: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [000] ...1  6442.011443: binder_transaction_buffer_release: transaction=1538839 data_size=4 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.011444: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   Binder:1668_2-1685  [000] ...1  6442.011446: binder_transaction: transaction=1538968 dest_node=62 dest_proc=1431 dest_thread=0 reply=0 flags=0x10 code=0x2
+   Binder:1668_2-1685  [000] ...1  6442.011447: binder_update_page_range: proc=1431 allocate=1 offset=0 size=4096
+   Binder:1668_2-1685  [000] ...1  6442.011447: binder_alloc_lru_start: proc=1431 page_index=0
+   Binder:1668_2-1685  [000] ...1  6442.011448: binder_alloc_lru_end: proc=1431 page_index=0
+   Binder:1668_2-1685  [000] ...1  6442.011449: binder_transaction_alloc_buf: transaction=1538968 data_size=44 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.011453: binder_write_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.011454: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ power@1.0-servi-1431  [000] ...1  6442.011457: binder_transaction_received: transaction=1538968
+ power@1.0-servi-1431  [000] ...1  6442.011457: binder_return: cmd=0x80407202 BR_TRANSACTION
+ power@1.0-servi-1431  [000] ...1  6442.011457: binder_read_done: ret=0
+ power@1.0-servi-1431  [000] ...1  6442.011458: binder_ioctl_done: ret=0
+ power@1.0-servi-1431  [000] ...1  6442.011470: binder_ioctl: cmd=0xc0306201 arg=0xffd526f8
+ power@1.0-servi-1431  [000] ...1  6442.011470: binder_command: cmd=0x40486312 BC_REPLY_SG
+ power@1.0-servi-1431  [000] ...1  6442.011471: binder_transaction: transaction=1538969 dest_node=0 dest_proc=1668 dest_thread=1685 reply=1 flags=0x0 code=0x0
+ power@1.0-servi-1431  [000] ...1  6442.011471: binder_transaction_alloc_buf: transaction=1538969 data_size=4 offsets_size=0
+ power@1.0-servi-1431  [000] ...1  6442.011474: binder_write_done: ret=0
+ power@1.0-servi-1431  [000] ...1  6442.011474: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ power@1.0-servi-1431  [000] ...1  6442.011475: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ power@1.0-servi-1431  [000] ...1  6442.011475: binder_read_done: ret=0
+ power@1.0-servi-1431  [000] ...1  6442.011475: binder_ioctl_done: ret=0
+ power@1.0-servi-1431  [000] ...1  6442.011478: binder_ioctl: cmd=0xc0306201 arg=0xffd52908
+ power@1.0-servi-1431  [000] ...1  6442.011478: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ power@1.0-servi-1431  [000] ...1  6442.011479: binder_transaction_buffer_release: transaction=1538968 data_size=44 offsets_size=0
+ power@1.0-servi-1431  [000] ...1  6442.011479: binder_update_page_range: proc=1431 allocate=0 offset=0 size=4096
+ power@1.0-servi-1431  [000] ...1  6442.011479: binder_free_lru_start: proc=1431 page_index=0
+ power@1.0-servi-1431  [000] ...1  6442.011480: binder_free_lru_end: proc=1431 page_index=0
+ power@1.0-servi-1431  [000] ...1  6442.011480: binder_write_done: ret=0
+ power@1.0-servi-1431  [000] ...1  6442.011480: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   Binder:1668_2-1685  [000] ...1  6442.011482: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   Binder:1668_2-1685  [000] ...1  6442.011483: binder_transaction_received: transaction=1538969
+   Binder:1668_2-1685  [000] ...1  6442.011483: binder_return: cmd=0x80407203 BR_REPLY
+   Binder:1668_2-1685  [000] ...1  6442.011483: binder_read_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.011484: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.011505: binder_ioctl: cmd=0xc0306201 arg=0xd058a708
+   Binder:1668_2-1685  [000] ...1  6442.011507: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [000] ...1  6442.011507: binder_transaction_buffer_release: transaction=1538967 data_size=68 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.011508: binder_write_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.011508: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ android.hardwar-1445  [003] ...1  6442.012855: binder_ioctl: cmd=0xc0306201 arg=0xf117f3a8
+ android.hardwar-1445  [003] ...1  6442.012857: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+ android.hardwar-1445  [003] ...1  6442.012859: binder_transaction: transaction=1538971 dest_node=275 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ android.hardwar-1445  [003] ...1  6442.012860: binder_transaction_alloc_buf: transaction=1538971 data_size=76 offsets_size=0
+ android.hardwar-1445  [003] ...1  6442.012865: binder_write_done: ret=0
+ android.hardwar-1445  [003] ...1  6442.012865: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ android.hardwar-1445  [003] ...1  6442.012865: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ android.hardwar-1445  [003] ...1  6442.012866: binder_read_done: ret=0
+ android.hardwar-1445  [003] ...1  6442.012866: binder_ioctl_done: ret=0
+ HwBinder:1440_1-1451  [003] ...1  6442.012916: binder_transaction_received: transaction=1538971
+ HwBinder:1440_1-1451  [003] ...1  6442.012916: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1440_1-1451  [003] ...1  6442.012917: binder_read_done: ret=0
+ HwBinder:1440_1-1451  [003] ...1  6442.012917: binder_ioctl_done: ret=0
+ HwBinder:1440_1-1451  [003] ...1  6442.012931: binder_ioctl: cmd=0xc0306201 arg=0xee85b768
+ HwBinder:1440_1-1451  [003] ...1  6442.012932: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1440_1-1451  [003] ...1  6442.012932: binder_transaction_buffer_release: transaction=1538971 data_size=76 offsets_size=0
+ HwBinder:1440_1-1451  [003] ...1  6442.012933: binder_write_done: ret=0
+ HwBinder:1440_1-1451  [003] ...1  6442.012933: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   Binder:1440_4-1774  [001] ...1  6442.012964: binder_transaction_received: transaction=1538970
+   Binder:1440_4-1774  [001] ...1  6442.012964: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1440_4-1774  [001] ...1  6442.012965: binder_read_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.012965: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.013104: binder_ioctl: cmd=0xc0306201 arg=0xeacfd768
+   Binder:1440_4-1774  [001] ...1  6442.013105: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_4-1774  [001] ...1  6442.013106: binder_transaction_buffer_release: transaction=1538970 data_size=80 offsets_size=0
+   Binder:1440_4-1774  [001] ...1  6442.013106: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_4-1774  [001] ...1  6442.013106: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.013107: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.013107: binder_write_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.013108: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ android.hardwar-1445  [003] ...1  6442.052914: binder_ioctl: cmd=0xc0306201 arg=0xf117f3a8
+ android.hardwar-1445  [003] ...1  6442.052918: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+ android.hardwar-1445  [003] ...1  6442.052922: binder_transaction: transaction=1538972 dest_node=275 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ android.hardwar-1445  [003] ...1  6442.052924: binder_transaction_alloc_buf: transaction=1538972 data_size=76 offsets_size=0
+ android.hardwar-1445  [003] ...1  6442.052931: binder_write_done: ret=0
+ android.hardwar-1445  [003] ...1  6442.052931: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ android.hardwar-1445  [003] ...1  6442.052932: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ android.hardwar-1445  [003] ...1  6442.052933: binder_read_done: ret=0
+ android.hardwar-1445  [003] ...1  6442.052934: binder_ioctl_done: ret=0
+ HwBinder:1440_1-1451  [001] ...1  6442.052938: binder_transaction_received: transaction=1538972
+ HwBinder:1440_1-1451  [001] ...1  6442.052939: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1440_1-1451  [001] ...1  6442.052941: binder_read_done: ret=0
+ HwBinder:1440_1-1451  [001] ...1  6442.052941: binder_ioctl_done: ret=0
+ HwBinder:1440_1-1451  [001] ...1  6442.053193: binder_ioctl: cmd=0xc0306201 arg=0xee85b768
+ HwBinder:1440_1-1451  [001] ...1  6442.053195: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1440_1-1451  [001] ...1  6442.053196: binder_transaction_buffer_release: transaction=1538972 data_size=76 offsets_size=0
+ HwBinder:1440_1-1451  [001] ...1  6442.053197: binder_write_done: ret=0
+ HwBinder:1440_1-1451  [001] ...1  6442.053198: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+    EventControl-1481  [001] ...1  6442.053205: binder_ioctl: cmd=0xc0306201 arg=0xec280338
+    EventControl-1481  [001] ...1  6442.053205: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+    EventControl-1481  [001] ...1  6442.053206: binder_transaction_buffer_release: transaction=1538920 data_size=8 offsets_size=0
+    EventControl-1481  [001] ...1  6442.053206: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+    EventControl-1481  [001] ...1  6442.053209: binder_transaction: transaction=1538973 dest_node=268 dest_proc=1430 dest_thread=0 reply=0 flags=0x10 code=0x14
+    EventControl-1481  [001] ...1  6442.053209: binder_update_page_range: proc=1430 allocate=1 offset=0 size=4096
+    EventControl-1481  [001] ...1  6442.053210: binder_alloc_lru_start: proc=1430 page_index=0
+    EventControl-1481  [001] ...1  6442.053210: binder_alloc_lru_end: proc=1430 page_index=0
+    EventControl-1481  [001] ...1  6442.053211: binder_transaction_alloc_buf: transaction=1538973 data_size=68 offsets_size=0
+    EventControl-1481  [001] ...3  6442.053213: binder_set_priority: proc=1430 thread=1467 old=97 => new=112 desired=112
+    EventControl-1481  [001] ...1  6442.053367: binder_write_done: ret=0
+    EventControl-1481  [001] ...1  6442.053368: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1430_1-1467  [000] ...1  6442.053613: binder_transaction_received: transaction=1538973
+ HwBinder:1430_1-1467  [000] ...1  6442.053614: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1430_1-1467  [000] ...1  6442.053615: binder_read_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053615: binder_ioctl_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053630: binder_ioctl: cmd=0xc0306201 arg=0xf1082068
+ HwBinder:1430_1-1467  [000] ...1  6442.053630: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1430_1-1467  [000] ...1  6442.053631: binder_transaction: transaction=1538974 dest_node=0 dest_proc=1440 dest_thread=1481 reply=1 flags=0x0 code=0x0
+ HwBinder:1430_1-1467  [000] ...1  6442.053632: binder_transaction_alloc_buf: transaction=1538974 data_size=8 offsets_size=0
+ earchbox:search-2842  [003] ...1  6442.053650: binder_ioctl: cmd=0xc0306201 arg=0xffeed438
+ earchbox:search-2842  [003] ...1  6442.053652: binder_command: cmd=0x40406300 BC_TRANSACTION
+ earchbox:search-2842  [003] ...1  6442.053656: binder_transaction: transaction=1538975 dest_node=39144 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ earchbox:search-2842  [003] ...1  6442.053656: binder_update_page_range: proc=1440 allocate=1 offset=0 size=4096
+ earchbox:search-2842  [003] ...1  6442.053656: binder_alloc_lru_start: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.053657: binder_alloc_lru_end: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.053657: binder_transaction_alloc_buf: transaction=1538975 data_size=80 offsets_size=0
+ earchbox:search-2842  [003] ...1  6442.053685: binder_write_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.053686: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ earchbox:search-2842  [003] ...1  6442.053686: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+    EventControl-1481  [000] ...1  6442.053687: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ earchbox:search-2842  [003] ...1  6442.053687: binder_read_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.053687: binder_ioctl_done: ret=0
+    EventControl-1481  [000] ...1  6442.053687: binder_transaction_received: transaction=1538974
+    EventControl-1481  [000] ...1  6442.053688: binder_return: cmd=0x80407203 BR_REPLY
+    EventControl-1481  [000] ...1  6442.053688: binder_read_done: ret=0
+    EventControl-1481  [000] ...1  6442.053688: binder_ioctl_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053701: binder_set_priority: proc=1430 thread=1467 old=112 => new=97 desired=97
+ HwBinder:1430_1-1467  [000] ...1  6442.053703: binder_write_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053704: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1430_1-1467  [000] ...1  6442.053704: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1430_1-1467  [000] ...1  6442.053705: binder_read_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053705: binder_ioctl_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053709: binder_ioctl: cmd=0xc0306201 arg=0xf1082768
+ HwBinder:1430_1-1467  [000] ...1  6442.053709: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1430_1-1467  [000] ...1  6442.053709: binder_transaction_buffer_release: transaction=1538973 data_size=68 offsets_size=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053710: binder_update_page_range: proc=1430 allocate=0 offset=0 size=4096
+ HwBinder:1430_1-1467  [000] ...1  6442.053710: binder_free_lru_start: proc=1430 page_index=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053711: binder_free_lru_end: proc=1430 page_index=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053711: binder_write_done: ret=0
+ HwBinder:1430_1-1467  [000] ...1  6442.053711: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   POSIX timer 0-1460  [001] ...1  6442.053981: binder_ioctl: cmd=0xc0306201 arg=0xed97f548
+   POSIX timer 0-1460  [001] ...1  6442.053983: binder_command: cmd=0x40406300 BC_TRANSACTION
+   POSIX timer 0-1460  [001] ...1  6442.053986: binder_transaction: transaction=1538976 dest_node=2026 dest_proc=1668 dest_thread=0 reply=0 flags=0x11 code=0x5
+   POSIX timer 0-1460  [001] ...1  6442.053987: binder_transaction_alloc_buf: transaction=1538976 data_size=68 offsets_size=0
+   POSIX timer 0-1460  [001] ...1  6442.054120: binder_write_done: ret=0
+   POSIX timer 0-1460  [001] ...1  6442.054121: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+   POSIX timer 0-1460  [001] ...1  6442.054121: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   POSIX timer 0-1460  [001] ...1  6442.054122: binder_read_done: ret=0
+   POSIX timer 0-1460  [001] ...1  6442.054122: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.054131: binder_transaction_received: transaction=1538975
+   Binder:1440_4-1774  [001] ...1  6442.054132: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1440_4-1774  [001] ...1  6442.054132: binder_read_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.054133: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054232: binder_transaction_received: transaction=1538976
+   Binder:1668_2-1685  [000] ...1  6442.054232: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1668_2-1685  [000] ...1  6442.054233: binder_read_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054234: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.054279: binder_ioctl: cmd=0xc0306201 arg=0xeacfd768
+   Binder:1440_4-1774  [001] ...1  6442.054280: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_4-1774  [001] ...1  6442.054281: binder_transaction_buffer_release: transaction=1538975 data_size=80 offsets_size=0
+   Binder:1440_4-1774  [001] ...1  6442.054282: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_4-1774  [001] ...1  6442.054282: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.054282: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.054283: binder_write_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.054283: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   Binder:1668_2-1685  [000] ...1  6442.054287: binder_ioctl: cmd=0xc0306201 arg=0xd0589c08
+   Binder:1668_2-1685  [000] ...1  6442.054289: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [000] ...1  6442.054290: binder_transaction_buffer_release: transaction=1538969 data_size=4 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.054291: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   Binder:1668_2-1685  [000] ...1  6442.054293: binder_transaction: transaction=1538977 dest_node=62 dest_proc=1431 dest_thread=0 reply=0 flags=0x10 code=0x2
+   Binder:1668_2-1685  [000] ...1  6442.054294: binder_update_page_range: proc=1431 allocate=1 offset=0 size=4096
+   Binder:1668_2-1685  [000] ...1  6442.054294: binder_alloc_lru_start: proc=1431 page_index=0
+   Binder:1668_2-1685  [000] ...1  6442.054294: binder_alloc_lru_end: proc=1431 page_index=0
+   Binder:1668_2-1685  [000] ...1  6442.054295: binder_transaction_alloc_buf: transaction=1538977 data_size=44 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.054299: binder_write_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054300: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ power@1.0-servi-1431  [001] ...1  6442.054402: binder_transaction_received: transaction=1538977
+ power@1.0-servi-1431  [001] ...1  6442.054403: binder_return: cmd=0x80407202 BR_TRANSACTION
+ power@1.0-servi-1431  [001] ...1  6442.054404: binder_read_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054405: binder_ioctl_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054417: binder_ioctl: cmd=0xc0306201 arg=0xffd526f8
+ power@1.0-servi-1431  [001] ...1  6442.054417: binder_command: cmd=0x40486312 BC_REPLY_SG
+ power@1.0-servi-1431  [001] ...1  6442.054418: binder_transaction: transaction=1538979 dest_node=0 dest_proc=1668 dest_thread=1685 reply=1 flags=0x0 code=0x0
+ power@1.0-servi-1431  [001] ...1  6442.054420: binder_transaction_alloc_buf: transaction=1538979 data_size=4 offsets_size=0
+ power@1.0-servi-1431  [001] ...1  6442.054524: binder_write_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054525: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ power@1.0-servi-1431  [001] ...1  6442.054525: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ power@1.0-servi-1431  [001] ...1  6442.054525: binder_read_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054526: binder_ioctl_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054531: binder_ioctl: cmd=0xc0306201 arg=0xffd52908
+ power@1.0-servi-1431  [001] ...1  6442.054531: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ power@1.0-servi-1431  [001] ...1  6442.054532: binder_transaction_buffer_release: transaction=1538977 data_size=44 offsets_size=0
+ power@1.0-servi-1431  [001] ...1  6442.054532: binder_update_page_range: proc=1431 allocate=0 offset=0 size=4096
+ power@1.0-servi-1431  [001] ...1  6442.054533: binder_free_lru_start: proc=1431 page_index=0
+ power@1.0-servi-1431  [001] ...1  6442.054533: binder_free_lru_end: proc=1431 page_index=0
+ power@1.0-servi-1431  [001] ...1  6442.054533: binder_write_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054533: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   Binder:1668_2-1685  [000] ...1  6442.054592: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   Binder:1668_2-1685  [000] ...1  6442.054594: binder_transaction_received: transaction=1538979
+   Binder:1668_2-1685  [000] ...1  6442.054594: binder_return: cmd=0x80407203 BR_REPLY
+   Binder:1668_2-1685  [000] ...1  6442.054594: binder_read_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054594: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054615: binder_ioctl: cmd=0xc0306201 arg=0xd058a708
+   Binder:1668_2-1685  [000] ...1  6442.054617: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [000] ...1  6442.054684: binder_transaction_buffer_release: transaction=1538976 data_size=68 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.054686: binder_write_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054687: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   Binder:1668_2-1685  [000] ...1  6442.054688: binder_transaction_received: transaction=1538978
+   Binder:1668_2-1685  [000] ...1  6442.054688: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1668_2-1685  [000] ...1  6442.054688: binder_read_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054688: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054708: binder_ioctl: cmd=0xc0306201 arg=0xd0589c08
+   Binder:1668_2-1685  [000] ...1  6442.054709: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [000] ...1  6442.054709: binder_transaction_buffer_release: transaction=1538979 data_size=4 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.054710: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   Binder:1668_2-1685  [000] ...1  6442.054711: binder_transaction: transaction=1538980 dest_node=62 dest_proc=1431 dest_thread=0 reply=0 flags=0x10 code=0x2
+   Binder:1668_2-1685  [000] ...1  6442.054711: binder_update_page_range: proc=1431 allocate=1 offset=0 size=4096
+   Binder:1668_2-1685  [000] ...1  6442.054711: binder_alloc_lru_start: proc=1431 page_index=0
+   Binder:1668_2-1685  [000] ...1  6442.054712: binder_alloc_lru_end: proc=1431 page_index=0
+   Binder:1668_2-1685  [000] ...1  6442.054712: binder_transaction_alloc_buf: transaction=1538980 data_size=44 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.054808: binder_write_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.054809: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ power@1.0-servi-1431  [001] ...1  6442.054895: binder_transaction_received: transaction=1538980
+ power@1.0-servi-1431  [001] ...1  6442.054896: binder_return: cmd=0x80407202 BR_TRANSACTION
+ power@1.0-servi-1431  [001] ...1  6442.054896: binder_read_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054896: binder_ioctl_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054903: binder_ioctl: cmd=0xc0306201 arg=0xffd526f8
+ power@1.0-servi-1431  [001] ...1  6442.054904: binder_command: cmd=0x40486312 BC_REPLY_SG
+ power@1.0-servi-1431  [001] ...1  6442.054905: binder_transaction: transaction=1538981 dest_node=0 dest_proc=1668 dest_thread=1685 reply=1 flags=0x0 code=0x0
+ power@1.0-servi-1431  [001] ...1  6442.054906: binder_transaction_alloc_buf: transaction=1538981 data_size=4 offsets_size=0
+ power@1.0-servi-1431  [001] ...1  6442.054971: binder_write_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054972: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ power@1.0-servi-1431  [001] ...1  6442.054972: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ power@1.0-servi-1431  [001] ...1  6442.054972: binder_read_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054973: binder_ioctl_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054977: binder_ioctl: cmd=0xc0306201 arg=0xffd52908
+ power@1.0-servi-1431  [001] ...1  6442.054977: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ power@1.0-servi-1431  [001] ...1  6442.054977: binder_transaction_buffer_release: transaction=1538980 data_size=44 offsets_size=0
+ power@1.0-servi-1431  [001] ...1  6442.054978: binder_update_page_range: proc=1431 allocate=0 offset=0 size=4096
+ power@1.0-servi-1431  [001] ...1  6442.054978: binder_free_lru_start: proc=1431 page_index=0
+ power@1.0-servi-1431  [001] ...1  6442.054979: binder_free_lru_end: proc=1431 page_index=0
+ power@1.0-servi-1431  [001] ...1  6442.054979: binder_write_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.054979: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   Binder:1668_2-1685  [000] ...1  6442.055024: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   Binder:1668_2-1685  [000] ...1  6442.055025: binder_transaction_received: transaction=1538981
+   Binder:1668_2-1685  [000] ...1  6442.055025: binder_return: cmd=0x80407203 BR_REPLY
+   Binder:1668_2-1685  [000] ...1  6442.055026: binder_read_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.055026: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.055049: binder_ioctl: cmd=0xc0306201 arg=0xd058a708
+   Binder:1668_2-1685  [000] ...1  6442.055050: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [000] ...1  6442.055051: binder_transaction_buffer_release: transaction=1538978 data_size=68 offsets_size=0
+   Binder:1668_2-1685  [000] ...1  6442.055052: binder_write_done: ret=0
+   Binder:1668_2-1685  [000] ...1  6442.055053: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+##### CPU 2 buffer started ####
+ HwBinder:1432_1-1746  [002] ...1  6442.071816: binder_transaction: transaction=1538982 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.071818: binder_transaction_alloc_buf: transaction=1538982 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.071826: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.071831: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.071831: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.071832: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.071833: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.071833: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.071839: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.071839: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.071840: binder_transaction_buffer_release: transaction=1538961 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.071841: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.071841: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.071842: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.071842: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.071842: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.071952: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.071954: binder_transaction_received: transaction=1538982
+   SensorService-1748  [003] ...1  6442.071954: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.071954: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.071955: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.072054: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.072055: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.072055: binder_transaction_buffer_release: transaction=1538982 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.072057: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.072059: binder_transaction: transaction=1538983 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.072059: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.072059: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.072059: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.072060: binder_transaction_alloc_buf: transaction=1538983 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.072061: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.072063: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.072064: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.072111: binder_transaction_received: transaction=1538983
+ HwBinder:1432_1-1746  [002] ...1  6442.072112: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.072112: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.072112: binder_ioctl_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.072828: binder_ioctl: cmd=0xc0306201 arg=0xffeed438
+ earchbox:search-2842  [003] ...1  6442.072831: binder_command: cmd=0x40406300 BC_TRANSACTION
+ earchbox:search-2842  [003] ...1  6442.072833: binder_transaction: transaction=1538984 dest_node=39144 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ earchbox:search-2842  [003] ...1  6442.072833: binder_update_page_range: proc=1440 allocate=1 offset=0 size=4096
+ earchbox:search-2842  [003] ...1  6442.072834: binder_alloc_lru_start: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.072834: binder_alloc_lru_end: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.072834: binder_transaction_alloc_buf: transaction=1538984 data_size=80 offsets_size=0
+ earchbox:search-2842  [003] ...1  6442.073012: binder_write_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.073013: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ earchbox:search-2842  [003] ...1  6442.073014: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ earchbox:search-2842  [003] ...1  6442.073014: binder_read_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.073014: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.073062: binder_transaction_received: transaction=1538984
+   Binder:1440_4-1774  [001] ...1  6442.073062: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1440_4-1774  [001] ...1  6442.073063: binder_read_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.073063: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.073184: binder_ioctl: cmd=0xc0306201 arg=0xeacfd768
+   Binder:1440_4-1774  [001] ...1  6442.073185: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_4-1774  [001] ...1  6442.073186: binder_transaction_buffer_release: transaction=1538984 data_size=80 offsets_size=0
+   Binder:1440_4-1774  [001] ...1  6442.073186: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_4-1774  [001] ...1  6442.073187: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.073187: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.073187: binder_write_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.073188: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ earchbox:search-2842  [003] ...1  6442.095885: binder_ioctl: cmd=0xc0306201 arg=0xffeed438
+ earchbox:search-2842  [003] ...1  6442.095892: binder_command: cmd=0x40406300 BC_TRANSACTION
+ earchbox:search-2842  [003] ...1  6442.095898: binder_transaction: transaction=1538985 dest_node=39144 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ earchbox:search-2842  [003] ...1  6442.095900: binder_update_page_range: proc=1440 allocate=1 offset=0 size=4096
+ earchbox:search-2842  [003] ...1  6442.095900: binder_alloc_lru_start: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.095901: binder_alloc_lru_end: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.095903: binder_transaction_alloc_buf: transaction=1538985 data_size=80 offsets_size=0
+ earchbox:search-2842  [003] ...1  6442.096037: binder_write_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.096038: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ earchbox:search-2842  [003] ...1  6442.096040: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ earchbox:search-2842  [003] ...1  6442.096042: binder_read_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.096042: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.096408: binder_transaction_received: transaction=1538985
+   Binder:1440_4-1774  [001] ...1  6442.096409: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1440_4-1774  [001] ...1  6442.096410: binder_read_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.096411: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.096633: binder_ioctl: cmd=0xc0306201 arg=0xeacfd768
+   Binder:1440_4-1774  [001] ...1  6442.096635: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_4-1774  [001] ...1  6442.096636: binder_transaction_buffer_release: transaction=1538985 data_size=80 offsets_size=0
+   Binder:1440_4-1774  [001] ...1  6442.096638: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_4-1774  [001] ...1  6442.096638: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.096638: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.096639: binder_write_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.096640: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ earchbox:search-2842  [003] ...1  6442.123727: binder_ioctl: cmd=0xc0306201 arg=0xffeed438
+ earchbox:search-2842  [003] ...1  6442.123731: binder_command: cmd=0x40406300 BC_TRANSACTION
+ earchbox:search-2842  [003] ...1  6442.123735: binder_transaction: transaction=1538986 dest_node=39144 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ earchbox:search-2842  [003] ...1  6442.123736: binder_update_page_range: proc=1440 allocate=1 offset=0 size=4096
+ earchbox:search-2842  [003] ...1  6442.123736: binder_alloc_lru_start: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.123737: binder_alloc_lru_end: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.123738: binder_transaction_alloc_buf: transaction=1538986 data_size=80 offsets_size=0
+ earchbox:search-2842  [003] ...1  6442.123798: binder_write_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.123799: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ earchbox:search-2842  [003] ...1  6442.123800: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ earchbox:search-2842  [003] ...1  6442.123800: binder_read_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.123801: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.123881: binder_transaction_received: transaction=1538986
+   Binder:1440_4-1774  [001] ...1  6442.123882: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1440_4-1774  [001] ...1  6442.123883: binder_read_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.123883: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.123995: binder_ioctl: cmd=0xc0306201 arg=0xeacfd768
+   Binder:1440_4-1774  [001] ...1  6442.123996: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_4-1774  [001] ...1  6442.123997: binder_transaction_buffer_release: transaction=1538986 data_size=80 offsets_size=0
+   Binder:1440_4-1774  [001] ...1  6442.123997: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_4-1774  [001] ...1  6442.123998: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.123998: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.123999: binder_write_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.123999: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ HwBinder:1432_1-1746  [002] ...1  6442.137843: binder_ioctl: cmd=0xc0306201 arg=0xe7234038
+ HwBinder:1432_1-1746  [002] ...1  6442.137848: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1432_1-1746  [002] ...1  6442.137850: binder_transaction: transaction=1538987 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.137854: binder_transaction_alloc_buf: transaction=1538987 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.137995: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.138003: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138004: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.138005: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.138006: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138007: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138019: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.138020: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.138020: binder_transaction_buffer_release: transaction=1538983 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138022: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.138022: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138023: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138024: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138024: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.138103: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.138106: binder_transaction_received: transaction=1538987
+   SensorService-1748  [003] ...1  6442.138106: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.138107: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.138108: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.138189: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.138191: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.138192: binder_transaction_buffer_release: transaction=1538987 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.138193: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.138196: binder_transaction: transaction=1538988 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.138196: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.138197: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.138197: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.138198: binder_transaction_alloc_buf: transaction=1538988 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.138199: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.138202: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.138203: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ earchbox:search-2842  [003] ...1  6442.138332: binder_ioctl: cmd=0xc0306201 arg=0xffeed438
+ earchbox:search-2842  [003] ...1  6442.138334: binder_command: cmd=0x40406300 BC_TRANSACTION
+ earchbox:search-2842  [003] ...1  6442.138336: binder_transaction: transaction=1538989 dest_node=39144 dest_proc=1440 dest_thread=0 reply=0 flags=0x11 code=0x3
+ earchbox:search-2842  [003] ...1  6442.138337: binder_update_page_range: proc=1440 allocate=1 offset=0 size=4096
+ earchbox:search-2842  [003] ...1  6442.138337: binder_alloc_lru_start: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.138337: binder_alloc_lru_end: proc=1440 page_index=0
+ earchbox:search-2842  [003] ...1  6442.138338: binder_transaction_alloc_buf: transaction=1538989 data_size=80 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138367: binder_transaction_received: transaction=1538988
+ HwBinder:1432_1-1746  [002] ...1  6442.138368: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.138369: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.138369: binder_ioctl_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.138446: binder_write_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.138447: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ earchbox:search-2842  [003] ...1  6442.138447: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ earchbox:search-2842  [003] ...1  6442.138448: binder_read_done: ret=0
+ earchbox:search-2842  [003] ...1  6442.138448: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.138873: binder_transaction_received: transaction=1538989
+   Binder:1440_4-1774  [001] ...1  6442.138873: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1440_4-1774  [001] ...1  6442.138874: binder_read_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.138875: binder_ioctl_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.139077: binder_ioctl: cmd=0xc0306201 arg=0xeacfd768
+   Binder:1440_4-1774  [001] ...1  6442.139078: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1440_4-1774  [001] ...1  6442.139079: binder_transaction_buffer_release: transaction=1538989 data_size=80 offsets_size=0
+   Binder:1440_4-1774  [001] ...1  6442.139080: binder_update_page_range: proc=1440 allocate=0 offset=0 size=4096
+   Binder:1440_4-1774  [001] ...1  6442.139080: binder_free_lru_start: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.139080: binder_free_lru_end: proc=1440 page_index=0
+   Binder:1440_4-1774  [001] ...1  6442.139081: binder_write_done: ret=0
+   Binder:1440_4-1774  [001] ...1  6442.139081: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   POSIX timer 0-1460  [000] ...1  6442.181387: binder_ioctl: cmd=0xc0306201 arg=0xed97f548
+   POSIX timer 0-1460  [000] ...1  6442.181506: binder_command: cmd=0x40406300 BC_TRANSACTION
+   POSIX timer 0-1460  [000] ...1  6442.181512: binder_transaction: transaction=1538990 dest_node=2026 dest_proc=1668 dest_thread=0 reply=0 flags=0x11 code=0x5
+   POSIX timer 0-1460  [000] ...1  6442.181515: binder_transaction_alloc_buf: transaction=1538990 data_size=68 offsets_size=0
+   POSIX timer 0-1460  [000] ...1  6442.181522: binder_write_done: ret=0
+   POSIX timer 0-1460  [000] ...1  6442.181522: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+   POSIX timer 0-1460  [000] ...1  6442.181523: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   POSIX timer 0-1460  [000] ...1  6442.181524: binder_read_done: ret=0
+   POSIX timer 0-1460  [000] ...1  6442.181525: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [002] ...1  6442.181973: binder_transaction_received: transaction=1538990
+   Binder:1668_2-1685  [002] ...1  6442.181974: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1668_2-1685  [002] ...1  6442.181975: binder_read_done: ret=0
+   Binder:1668_2-1685  [002] ...1  6442.181976: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [002] ...1  6442.182175: binder_ioctl: cmd=0xc0306201 arg=0xd0589c08
+   Binder:1668_2-1685  [002] ...1  6442.182178: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [002] ...1  6442.182179: binder_transaction_buffer_release: transaction=1538981 data_size=4 offsets_size=0
+   Binder:1668_2-1685  [002] ...1  6442.182181: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   Binder:1668_2-1685  [002] ...1  6442.182183: binder_transaction: transaction=1538991 dest_node=62 dest_proc=1431 dest_thread=0 reply=0 flags=0x10 code=0x2
+   Binder:1668_2-1685  [002] ...1  6442.182184: binder_update_page_range: proc=1431 allocate=1 offset=0 size=4096
+   Binder:1668_2-1685  [002] ...1  6442.182184: binder_alloc_lru_start: proc=1431 page_index=0
+   Binder:1668_2-1685  [002] ...1  6442.182185: binder_alloc_lru_end: proc=1431 page_index=0
+   Binder:1668_2-1685  [002] ...1  6442.182186: binder_transaction_alloc_buf: transaction=1538991 data_size=44 offsets_size=0
+   Binder:1668_2-1685  [002] ...1  6442.182257: binder_write_done: ret=0
+   Binder:1668_2-1685  [002] ...1  6442.182258: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ power@1.0-servi-1431  [001] ...1  6442.182436: binder_transaction_received: transaction=1538991
+ power@1.0-servi-1431  [001] ...1  6442.182437: binder_return: cmd=0x80407202 BR_TRANSACTION
+ power@1.0-servi-1431  [001] ...1  6442.182438: binder_read_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.182438: binder_ioctl_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.182452: binder_ioctl: cmd=0xc0306201 arg=0xffd526f8
+ power@1.0-servi-1431  [001] ...1  6442.182452: binder_command: cmd=0x40486312 BC_REPLY_SG
+ power@1.0-servi-1431  [001] ...1  6442.182454: binder_transaction: transaction=1538992 dest_node=0 dest_proc=1668 dest_thread=1685 reply=1 flags=0x0 code=0x0
+ power@1.0-servi-1431  [001] ...1  6442.182455: binder_transaction_alloc_buf: transaction=1538992 data_size=4 offsets_size=0
+ power@1.0-servi-1431  [001] ...1  6442.182519: binder_write_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.182520: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ power@1.0-servi-1431  [001] ...1  6442.182520: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ power@1.0-servi-1431  [001] ...1  6442.182521: binder_read_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.182521: binder_ioctl_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.182525: binder_ioctl: cmd=0xc0306201 arg=0xffd52908
+ power@1.0-servi-1431  [001] ...1  6442.182526: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ power@1.0-servi-1431  [001] ...1  6442.182526: binder_transaction_buffer_release: transaction=1538991 data_size=44 offsets_size=0
+ power@1.0-servi-1431  [001] ...1  6442.182527: binder_update_page_range: proc=1431 allocate=0 offset=0 size=4096
+ power@1.0-servi-1431  [001] ...1  6442.182527: binder_free_lru_start: proc=1431 page_index=0
+ power@1.0-servi-1431  [001] ...1  6442.182528: binder_free_lru_end: proc=1431 page_index=0
+ power@1.0-servi-1431  [001] ...1  6442.182528: binder_write_done: ret=0
+ power@1.0-servi-1431  [001] ...1  6442.182528: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   Binder:1668_2-1685  [002] ...1  6442.182700: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   Binder:1668_2-1685  [002] ...1  6442.182702: binder_transaction_received: transaction=1538992
+   Binder:1668_2-1685  [002] ...1  6442.182703: binder_return: cmd=0x80407203 BR_REPLY
+   Binder:1668_2-1685  [002] ...1  6442.182703: binder_read_done: ret=0
+   Binder:1668_2-1685  [002] ...1  6442.182704: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [002] ...1  6442.182734: binder_ioctl: cmd=0xc0306201 arg=0xd058a708
+   Binder:1668_2-1685  [002] ...1  6442.182735: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [002] ...1  6442.182737: binder_transaction_buffer_release: transaction=1538990 data_size=68 offsets_size=0
+   Binder:1668_2-1685  [002] ...1  6442.182738: binder_write_done: ret=0
+   Binder:1668_2-1685  [002] ...1  6442.182739: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ HwBinder:1432_1-1746  [002] ...1  6442.209837: binder_ioctl: cmd=0xc0306201 arg=0xe7234038
+ HwBinder:1432_1-1746  [002] ...1  6442.209841: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1432_1-1746  [002] ...1  6442.209843: binder_transaction: transaction=1538993 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.209845: binder_transaction_alloc_buf: transaction=1538993 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.209905: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.209913: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.209913: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.209914: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.209915: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.209915: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.209925: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.209926: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.209926: binder_transaction_buffer_release: transaction=1538988 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.209927: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.209928: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.209928: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.209929: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.209929: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.210157: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.210159: binder_transaction_received: transaction=1538993
+   SensorService-1748  [003] ...1  6442.210159: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.210160: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.210161: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.210258: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.210259: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.210261: binder_transaction_buffer_release: transaction=1538993 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.210262: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.210265: binder_transaction: transaction=1538994 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.210266: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.210266: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.210266: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.210267: binder_transaction_alloc_buf: transaction=1538994 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.210269: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.210327: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.210328: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.210515: binder_transaction_received: transaction=1538994
+ HwBinder:1432_1-1746  [002] ...1  6442.210516: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.210516: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.210517: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.290720: binder_ioctl: cmd=0xc0306201 arg=0xe7234038
+ HwBinder:1432_1-1746  [002] ...1  6442.290724: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1432_1-1746  [002] ...1  6442.290726: binder_transaction: transaction=1538995 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.290729: binder_transaction_alloc_buf: transaction=1538995 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.290788: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.290794: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.290795: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.290796: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.290796: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.290797: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.290806: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.290807: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.290807: binder_transaction_buffer_release: transaction=1538994 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.290808: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.290809: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.290809: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.290810: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.290810: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.291030: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.291032: binder_transaction_received: transaction=1538995
+   SensorService-1748  [003] ...1  6442.291032: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.291032: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.291033: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.291107: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.291108: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.291109: binder_transaction_buffer_release: transaction=1538995 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.291110: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.291113: binder_transaction: transaction=1538996 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.291113: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.291113: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.291114: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.291114: binder_transaction_alloc_buf: transaction=1538996 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.291116: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.291187: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.291188: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.291308: binder_transaction_received: transaction=1538996
+ HwBinder:1432_1-1746  [002] ...1  6442.291309: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.291309: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.291310: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.364632: binder_ioctl: cmd=0xc0306201 arg=0xe7234038
+ HwBinder:1432_1-1746  [002] ...1  6442.364636: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1432_1-1746  [002] ...1  6442.364640: binder_transaction: transaction=1538997 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.364643: binder_transaction_alloc_buf: transaction=1538997 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.364728: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.364737: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.364738: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.364739: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.364740: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.364740: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.364752: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.364753: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.364754: binder_transaction_buffer_release: transaction=1538996 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.364755: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.364756: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.364756: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.364757: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.364757: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.364959: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.364962: binder_transaction_received: transaction=1538997
+   SensorService-1748  [003] ...1  6442.364962: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.364963: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.364964: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.365073: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.365074: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.365075: binder_transaction_buffer_release: transaction=1538997 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.365077: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.365080: binder_transaction: transaction=1538998 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.365080: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.365081: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.365081: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.365082: binder_transaction_alloc_buf: transaction=1538998 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.365084: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.365163: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.365164: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.365346: binder_transaction_received: transaction=1538998
+ HwBinder:1432_1-1746  [002] ...1  6442.365347: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.365348: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.365348: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435003: binder_ioctl: cmd=0xc0306201 arg=0xe7234038
+ HwBinder:1432_1-1746  [002] ...1  6442.435009: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1432_1-1746  [002] ...1  6442.435013: binder_transaction: transaction=1538999 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.435018: binder_transaction_alloc_buf: transaction=1538999 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.435144: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.435172: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435173: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.435175: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.435176: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435177: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435194: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.435195: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.435196: binder_transaction_buffer_release: transaction=1538998 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435198: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.435199: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435200: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435201: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435201: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.435537: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.435539: binder_transaction_received: transaction=1538999
+   SensorService-1748  [003] ...1  6442.435539: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.435540: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.435541: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.435613: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.435615: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.435616: binder_transaction_buffer_release: transaction=1538999 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.435617: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.435620: binder_transaction: transaction=1539000 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.435621: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.435621: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.435621: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.435622: binder_transaction_alloc_buf: transaction=1539000 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.435624: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.435703: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.435704: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.435943: binder_transaction_received: transaction=1539000
+ HwBinder:1432_1-1746  [002] ...1  6442.435944: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.435945: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.435945: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.509438: binder_ioctl: cmd=0xc0306201 arg=0xe7234038
+ HwBinder:1432_1-1746  [002] ...1  6442.509442: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1432_1-1746  [002] ...1  6442.509445: binder_transaction: transaction=1539001 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.509448: binder_transaction_alloc_buf: transaction=1539001 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.509534: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.509543: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.509544: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.509545: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.509546: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.509546: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.509559: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.509559: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.509560: binder_transaction_buffer_release: transaction=1539000 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.509562: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.509562: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.509563: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.509564: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.509564: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.509768: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.509771: binder_transaction_received: transaction=1539001
+   SensorService-1748  [003] ...1  6442.509771: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.509772: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.509773: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.509851: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.509852: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.509854: binder_transaction_buffer_release: transaction=1539001 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.509855: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.509859: binder_transaction: transaction=1539002 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.509859: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.509859: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.509860: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.509860: binder_transaction_alloc_buf: transaction=1539002 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.509862: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.509942: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.509943: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.510116: binder_transaction_received: transaction=1539002
+ HwBinder:1432_1-1746  [002] ...1  6442.510117: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.510117: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.510118: binder_ioctl_done: ret=0
+ m.android.phone-1933  [003] ...1  6442.518101: binder_ioctl: cmd=0xc0306201 arg=0xffeed608
+ m.android.phone-1933  [003] ...1  6442.518104: binder_command: cmd=0x40406300 BC_TRANSACTION
+ m.android.phone-1933  [003] ...1  6442.518107: binder_transaction: transaction=1539003 dest_node=3761 dest_proc=1668 dest_thread=0 reply=0 flags=0x10 code=0x5
+ m.android.phone-1933  [003] ...1  6442.518108: binder_transaction_alloc_buf: transaction=1539003 data_size=76 offsets_size=0
+ m.android.phone-1933  [003] ...1  6442.518114: binder_write_done: ret=0
+ m.android.phone-1933  [003] ...1  6442.518114: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+   Binder:1668_2-1685  [003] ...1  6442.518118: binder_transaction_received: transaction=1539003
+   Binder:1668_2-1685  [003] ...1  6442.518118: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:1668_2-1685  [003] ...1  6442.518119: binder_read_done: ret=0
+   Binder:1668_2-1685  [003] ...1  6442.518119: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [003] ...1  6442.518182: binder_ioctl: cmd=0xc0306201 arg=0xd058a568
+   Binder:1668_2-1685  [003] ...1  6442.518184: binder_command: cmd=0x40406301 BC_REPLY
+   Binder:1668_2-1685  [003] ...1  6442.518185: binder_transaction: transaction=1539004 dest_node=0 dest_proc=1933 dest_thread=1933 reply=1 flags=0x0 code=0x0
+   Binder:1668_2-1685  [003] ...1  6442.518185: binder_transaction_alloc_buf: transaction=1539004 data_size=28 offsets_size=0
+ m.android.phone-1933  [003] ...1  6442.518190: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ m.android.phone-1933  [003] ...1  6442.518191: binder_transaction_received: transaction=1539004
+ m.android.phone-1933  [003] ...1  6442.518191: binder_return: cmd=0x80407203 BR_REPLY
+ m.android.phone-1933  [003] ...1  6442.518191: binder_read_done: ret=0
+ m.android.phone-1933  [003] ...1  6442.518192: binder_ioctl_done: ret=0
+ m.android.phone-1933  [003] ...1  6442.518297: binder_ioctl: cmd=0xc0306201 arg=0xffeed608
+ m.android.phone-1933  [003] ...1  6442.518298: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ m.android.phone-1933  [003] ...1  6442.518298: binder_transaction_buffer_release: transaction=1539004 data_size=28 offsets_size=0
+ m.android.phone-1933  [003] ...1  6442.518299: binder_command: cmd=0x40406300 BC_TRANSACTION
+ m.android.phone-1933  [003] ...1  6442.518300: binder_transaction: transaction=1539005 dest_node=3761 dest_proc=1668 dest_thread=0 reply=0 flags=0x10 code=0x5
+ m.android.phone-1933  [003] ...1  6442.518301: binder_transaction_alloc_buf: transaction=1539005 data_size=76 offsets_size=0
+ m.android.phone-1933  [003] ...1  6442.518304: binder_write_done: ret=0
+ m.android.phone-1933  [003] ...1  6442.518304: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+  Binder:1668_11-3411  [003] ...1  6442.518307: binder_transaction_received: transaction=1539005
+  Binder:1668_11-3411  [003] ...1  6442.518307: binder_return: cmd=0x80407202 BR_TRANSACTION
+  Binder:1668_11-3411  [003] ...1  6442.518308: binder_read_done: ret=0
+  Binder:1668_11-3411  [003] ...1  6442.518308: binder_ioctl_done: ret=0
+  Binder:1668_11-3411  [003] ...1  6442.518354: binder_ioctl: cmd=0xc0306201 arg=0xc8eff568
+  Binder:1668_11-3411  [003] ...1  6442.518355: binder_command: cmd=0x40406301 BC_REPLY
+  Binder:1668_11-3411  [003] ...1  6442.518356: binder_transaction: transaction=1539006 dest_node=0 dest_proc=1933 dest_thread=1933 reply=1 flags=0x0 code=0x0
+  Binder:1668_11-3411  [003] ...1  6442.518357: binder_transaction_alloc_buf: transaction=1539006 data_size=28 offsets_size=0
+  Binder:1668_11-3411  [003] ...1  6442.518359: binder_write_done: ret=0
+  Binder:1668_11-3411  [003] ...1  6442.518360: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+  Binder:1668_11-3411  [003] ...1  6442.518360: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+  Binder:1668_11-3411  [003] ...1  6442.518360: binder_read_done: ret=0
+  Binder:1668_11-3411  [003] ...1  6442.518361: binder_ioctl_done: ret=0
+  Binder:1668_11-3411  [003] ...1  6442.518363: binder_ioctl: cmd=0xc0306201 arg=0xc8eff708
+  Binder:1668_11-3411  [003] ...1  6442.518364: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+  Binder:1668_11-3411  [003] ...1  6442.518364: binder_transaction_buffer_release: transaction=1539005 data_size=76 offsets_size=0
+  Binder:1668_11-3411  [003] ...1  6442.518365: binder_write_done: ret=0
+  Binder:1668_11-3411  [003] ...1  6442.518365: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ m.android.phone-1933  [003] ...1  6442.518367: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ m.android.phone-1933  [003] ...1  6442.518367: binder_transaction_received: transaction=1539006
+ m.android.phone-1933  [003] ...1  6442.518367: binder_return: cmd=0x80407203 BR_REPLY
+ m.android.phone-1933  [003] ...1  6442.518368: binder_read_done: ret=0
+ m.android.phone-1933  [003] ...1  6442.518368: binder_ioctl_done: ret=0
+ m.android.phone-1933  [003] ...1  6442.518483: binder_ioctl: cmd=0xc0306201 arg=0xffeed8b8
+ m.android.phone-1933  [003] ...1  6442.518484: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ m.android.phone-1933  [003] ...1  6442.518484: binder_transaction_buffer_release: transaction=1539006 data_size=28 offsets_size=0
+ m.android.phone-1933  [003] ...1  6442.518485: binder_write_done: ret=0
+ m.android.phone-1933  [003] ...1  6442.518485: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [003] ...1  6442.518516: binder_write_done: ret=0
+   Binder:1668_2-1685  [003] ...1  6442.518517: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+   Binder:1668_2-1685  [003] ...1  6442.518517: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   Binder:1668_2-1685  [003] ...1  6442.518517: binder_read_done: ret=0
+   Binder:1668_2-1685  [003] ...1  6442.518518: binder_ioctl_done: ret=0
+   Binder:1668_2-1685  [003] ...1  6442.518522: binder_ioctl: cmd=0xc0306201 arg=0xd058a708
+   Binder:1668_2-1685  [003] ...1  6442.518523: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:1668_2-1685  [003] ...1  6442.518523: binder_transaction_buffer_release: transaction=1539003 data_size=76 offsets_size=0
+   Binder:1668_2-1685  [003] ...1  6442.518524: binder_write_done: ret=0
+   Binder:1668_2-1685  [003] ...1  6442.518524: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581302: binder_ioctl: cmd=0xc0306201 arg=0xe7234038
+ HwBinder:1432_1-1746  [002] ...1  6442.581308: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1432_1-1746  [002] ...1  6442.581312: binder_transaction: transaction=1539007 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.581318: binder_transaction_alloc_buf: transaction=1539007 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.581473: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.581481: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581481: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.581482: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.581483: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581483: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581492: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.581492: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.581493: binder_transaction_buffer_release: transaction=1539002 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581494: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.581494: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581495: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581495: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581495: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.581646: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.581648: binder_transaction_received: transaction=1539007
+   SensorService-1748  [003] ...1  6442.581649: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.581649: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.581650: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.581711: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.581712: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.581713: binder_transaction_buffer_release: transaction=1539007 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.581714: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.581716: binder_transaction: transaction=1539008 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.581716: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.581717: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.581717: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.581717: binder_transaction_alloc_buf: transaction=1539008 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.581719: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.581773: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.581774: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.581920: binder_transaction_received: transaction=1539008
+ HwBinder:1432_1-1746  [002] ...1  6442.581921: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.581921: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.581922: binder_ioctl_done: ret=0
+ gnss@1.0-servic-2055  [000] ...1  6442.599061: binder_ioctl: cmd=0xc0306201 arg=0xf0097a38
+ gnss@1.0-servic-2055  [000] ...1  6442.599066: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ gnss@1.0-servic-2055  [000] ...1  6442.599067: binder_transaction_buffer_release: transaction=1538888 data_size=4 offsets_size=0
+ gnss@1.0-servic-2055  [000] ...1  6442.599069: binder_update_page_range: proc=1428 allocate=0 offset=0 size=4096
+ gnss@1.0-servic-2055  [000] ...1  6442.599069: binder_free_lru_start: proc=1428 page_index=0
+ gnss@1.0-servic-2055  [000] ...1  6442.599070: binder_free_lru_end: proc=1428 page_index=0
+ gnss@1.0-servic-2055  [000] ...1  6442.599071: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+ gnss@1.0-servic-2055  [000] ...1  6442.599076: binder_transaction: transaction=1539009 dest_node=11090 dest_proc=1668 dest_thread=0 reply=0 flags=0x10 code=0x3
+ gnss@1.0-servic-2055  [000] ...1  6442.599078: binder_transaction_alloc_buf: transaction=1539009 data_size=84 offsets_size=8
+ gnss@1.0-servic-2055  [000] ...1  6442.599167: binder_write_done: ret=0
+ gnss@1.0-servic-2055  [000] ...1  6442.599168: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1668_2-1760  [001] ...1  6442.599416: binder_transaction_received: transaction=1539009
+ HwBinder:1668_2-1760  [001] ...1  6442.599417: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1668_2-1760  [001] ...1  6442.599418: binder_read_done: ret=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599419: binder_ioctl_done: ret=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599659: binder_ioctl: cmd=0xc0306201 arg=0xcc7284f8
+ HwBinder:1668_2-1760  [001] ...1  6442.599661: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1668_2-1760  [001] ...1  6442.599663: binder_transaction: transaction=1539010 dest_node=0 dest_proc=1428 dest_thread=2055 reply=1 flags=0x0 code=0x0
+ HwBinder:1668_2-1760  [001] ...1  6442.599664: binder_update_page_range: proc=1428 allocate=1 offset=0 size=4096
+ HwBinder:1668_2-1760  [001] ...1  6442.599664: binder_alloc_lru_start: proc=1428 page_index=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599665: binder_alloc_lru_end: proc=1428 page_index=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599665: binder_transaction_alloc_buf: transaction=1539010 data_size=4 offsets_size=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599812: binder_write_done: ret=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599813: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1668_2-1760  [001] ...1  6442.599814: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1668_2-1760  [001] ...1  6442.599815: binder_read_done: ret=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599815: binder_ioctl_done: ret=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599824: binder_ioctl: cmd=0xc0306201 arg=0xcc728708
+ HwBinder:1668_2-1760  [001] ...1  6442.599825: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1668_2-1760  [001] ...1  6442.599826: binder_transaction_buffer_release: transaction=1539009 data_size=84 offsets_size=8
+ HwBinder:1668_2-1760  [001] ...1  6442.599828: binder_write_done: ret=0
+ HwBinder:1668_2-1760  [001] ...1  6442.599828: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+      android.bg-1689  [002] ...1  6442.600273: binder_ioctl: cmd=0xc0306201 arg=0xcf77a148
+      android.bg-1689  [002] ...1  6442.600276: binder_command: cmd=0x40406300 BC_TRANSACTION
+ gnss@1.0-servic-2055  [003] ...1  6442.600279: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+      android.bg-1689  [002] ...1  6442.600281: binder_transaction: transaction=1539011 dest_node=70624 dest_proc=2242 dest_thread=0 reply=0 flags=0x11 code=0x4
+ gnss@1.0-servic-2055  [003] ...1  6442.600281: binder_transaction_received: transaction=1539010
+ gnss@1.0-servic-2055  [003] ...1  6442.600281: binder_return: cmd=0x80407203 BR_REPLY
+ gnss@1.0-servic-2055  [003] ...1  6442.600282: binder_read_done: ret=0
+ gnss@1.0-servic-2055  [003] ...1  6442.600282: binder_ioctl_done: ret=0
+      android.bg-1689  [002] ...1  6442.600283: binder_transaction_alloc_buf: transaction=1539011 data_size=1388 offsets_size=0
+   Binder:2242_E-4058  [002] ...1  6442.600293: binder_transaction_received: transaction=1539011
+   Binder:2242_E-4058  [002] ...1  6442.600293: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:2242_E-4058  [002] ...1  6442.600294: binder_read_done: ret=0
+   Binder:2242_E-4058  [002] ...1  6442.600295: binder_ioctl_done: ret=0
+   Binder:2242_E-4058  [002] ...1  6442.600400: binder_ioctl: cmd=0xc0306201 arg=0xc63ff708
+   Binder:2242_E-4058  [002] ...1  6442.600402: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:2242_E-4058  [002] ...1  6442.600403: binder_transaction_buffer_release: transaction=1539011 data_size=1388 offsets_size=0
+   Binder:2242_E-4058  [002] ...1  6442.600404: binder_write_done: ret=0
+   Binder:2242_E-4058  [002] ...1  6442.600404: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+      android.bg-1689  [002] ...1  6442.600668: binder_write_done: ret=0
+      android.bg-1689  [002] ...1  6442.600668: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+      android.bg-1689  [002] ...1  6442.600669: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+      android.bg-1689  [002] ...1  6442.600670: binder_read_done: ret=0
+      android.bg-1689  [002] ...1  6442.600670: binder_ioctl_done: ret=0
+      android.bg-1689  [002] ...1  6442.600768: binder_ioctl: cmd=0xc0306201 arg=0xcf77a148
+      android.bg-1689  [002] ...1  6442.600770: binder_command: cmd=0x40406300 BC_TRANSACTION
+      android.bg-1689  [002] ...1  6442.600771: binder_transaction: transaction=1539012 dest_node=45211 dest_proc=2242 dest_thread=0 reply=0 flags=0x11 code=0x4
+      android.bg-1689  [002] ...1  6442.600772: binder_transaction_alloc_buf: transaction=1539012 data_size=1388 offsets_size=0
+      android.bg-1689  [002] ...1  6442.600846: binder_write_done: ret=0
+      android.bg-1689  [002] ...1  6442.600847: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+      android.bg-1689  [002] ...1  6442.600848: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+      android.bg-1689  [002] ...1  6442.600849: binder_read_done: ret=0
+      android.bg-1689  [002] ...1  6442.600849: binder_ioctl_done: ret=0
+   Binder:2242_E-4058  [003] ...1  6442.601159: binder_transaction_received: transaction=1539012
+   Binder:2242_E-4058  [003] ...1  6442.601160: binder_return: cmd=0x80407202 BR_TRANSACTION
+   Binder:2242_E-4058  [003] ...1  6442.601161: binder_read_done: ret=0
+   Binder:2242_E-4058  [003] ...1  6442.601161: binder_ioctl_done: ret=0
+   Binder:2242_E-4058  [003] ...1  6442.601274: binder_ioctl: cmd=0xc0306201 arg=0xc63ff708
+   Binder:2242_E-4058  [003] ...1  6442.601276: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   Binder:2242_E-4058  [003] ...1  6442.601277: binder_transaction_buffer_release: transaction=1539012 data_size=1388 offsets_size=0
+   Binder:2242_E-4058  [003] ...1  6442.601278: binder_write_done: ret=0
+   Binder:2242_E-4058  [003] ...1  6442.601279: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646332: binder_ioctl: cmd=0xc0306201 arg=0xe7234038
+ HwBinder:1432_1-1746  [002] ...1  6442.646336: binder_command: cmd=0x40486312 BC_REPLY_SG
+ HwBinder:1432_1-1746  [002] ...1  6442.646338: binder_transaction: transaction=1539013 dest_node=0 dest_proc=1668 dest_thread=1748 reply=1 flags=0x0 code=0x0
+ HwBinder:1432_1-1746  [002] ...1  6442.646340: binder_transaction_alloc_buf: transaction=1539013 data_size=168 offsets_size=24
+ HwBinder:1432_1-1746  [002] ...1  6442.646406: binder_set_priority: proc=1432 thread=1746 old=89 => new=120 desired=120
+ HwBinder:1432_1-1746  [002] ...1  6442.646411: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646411: binder_wait_for_work: proc_work=0 transaction_stack=0 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.646413: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+ HwBinder:1432_1-1746  [002] ...1  6442.646413: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646413: binder_ioctl_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646422: binder_ioctl: cmd=0xc0306201 arg=0xe7234768
+ HwBinder:1432_1-1746  [002] ...1  6442.646423: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+ HwBinder:1432_1-1746  [002] ...1  6442.646423: binder_transaction_buffer_release: transaction=1539008 data_size=44 offsets_size=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646424: binder_update_page_range: proc=1432 allocate=0 offset=0 size=4096
+ HwBinder:1432_1-1746  [002] ...1  6442.646425: binder_free_lru_start: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646425: binder_free_lru_end: proc=1432 page_index=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646426: binder_write_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646426: binder_wait_for_work: proc_work=1 transaction_stack=0 thread_todo=0
+   SensorService-1748  [003] ...1  6442.646478: binder_return: cmd=0x7206 BR_TRANSACTION_COMPLETE
+   SensorService-1748  [003] ...1  6442.646480: binder_transaction_received: transaction=1539013
+   SensorService-1748  [003] ...1  6442.646480: binder_return: cmd=0x80407203 BR_REPLY
+   SensorService-1748  [003] ...1  6442.646480: binder_read_done: ret=0
+   SensorService-1748  [003] ...1  6442.646481: binder_ioctl_done: ret=0
+   SensorService-1748  [003] ...1  6442.646642: binder_ioctl: cmd=0xc0306201 arg=0xcdcfd258
+   SensorService-1748  [003] ...1  6442.646644: binder_command: cmd=0x40086303 BC_FREE_BUFFER
+   SensorService-1748  [003] ...1  6442.646645: binder_transaction_buffer_release: transaction=1539013 data_size=168 offsets_size=24
+   SensorService-1748  [003] ...1  6442.646647: binder_command: cmd=0x40486311 BC_TRANSACTION_SG
+   SensorService-1748  [003] ...1  6442.646670: binder_transaction: transaction=1539014 dest_node=81 dest_proc=1432 dest_thread=0 reply=0 flags=0x10 code=0x4
+   SensorService-1748  [003] ...1  6442.646671: binder_update_page_range: proc=1432 allocate=1 offset=0 size=4096
+   SensorService-1748  [003] ...1  6442.646671: binder_alloc_lru_start: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.646672: binder_alloc_lru_end: proc=1432 page_index=0
+   SensorService-1748  [003] ...1  6442.646672: binder_transaction_alloc_buf: transaction=1539014 data_size=44 offsets_size=0
+   SensorService-1748  [003] ...3  6442.646674: binder_set_priority: proc=1432 thread=1746 old=120 => new=89 desired=89
+   SensorService-1748  [003] ...1  6442.646789: binder_write_done: ret=0
+   SensorService-1748  [003] ...1  6442.646791: binder_wait_for_work: proc_work=0 transaction_stack=1 thread_todo=1
+ HwBinder:1432_1-1746  [002] ...1  6442.646965: binder_transaction_received: transaction=1539014
+ HwBinder:1432_1-1746  [002] ...1  6442.646966: binder_return: cmd=0x80407202 BR_TRANSACTION
+ HwBinder:1432_1-1746  [002] ...1  6442.646966: binder_read_done: ret=0
+ HwBinder:1432_1-1746  [002] ...1  6442.646966: binder_ioctl_done: ret=0

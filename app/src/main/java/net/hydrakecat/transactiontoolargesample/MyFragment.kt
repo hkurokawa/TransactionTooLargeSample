@@ -30,4 +30,8 @@ class MyFragment : Fragment() {
     root.findViewById<TextView>(R.id.text).text = num.toString()
     return root
   }
+
+  override fun onSaveInstanceState(outState: Bundle) {
+    outState.putByteArray("dummy-data", ByteArray(1_000_000))
+  }
 }
